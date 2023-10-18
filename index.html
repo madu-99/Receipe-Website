@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Spot</title>
+    <!--link logo-->
+    <link rel="icon" href="vendor/images/logo.png">
+
+    <!--link bootstrap 5 css file-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!--link fontawesome css file-->
+    <link rel="stylesheet" href="vendor/FontAwesome/css/all.min.css">
+
+    <!--link custom css file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--link bootstrap 5 js file-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--link custom js file-->
+    <script src="app.js"></script>
+
+    <!--link jquery-->
+    <script src="vendor/Jquery/jquery.min.js"></script>
+
+    <script>
+    //page loader
+        $(document).ready(function(){
+          $(".loader").fadeOut(1000);
+        });</script>
+  
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="loader"></div>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="vendor/images/logo.png" alt=""></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                    <ul class="navbar nav">
+                        <li class="nav-item"> <a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="receipe.html" class="nav-link">Receipe</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <a href="receipe.html" style="text-decoration: none; color: black;"> <i class="fa fa-search"></i></a>
+                    </ul>
+                   
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--banner section-->
+    <div class="banner">
+        <div class="container-fluid">
+            <div class="content">
+                <h1 class="display-1">Discover <br> Mouthwatering <br> Receipes</h1>
+                <p>Explore a world of flavourful dishes that will tantalize your taste buds.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--recipe section-->
+    <div class="recipe mt-5">
+        <div class="container-fluid">
+            <h2 class="text-center">Recipes</h2>
+            <div class="row mt-3">
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img9.jpg " alt="SriLankan" class="rounded-circle"></a>
+                    <h5 class="text-center">Sri Lankan Milk Rice</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"> <img src="vendor/images/img11.jpg" alt="Drinks" class="rounded-circle"></a>
+                <h5 class="text-center">Drinks</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img12.jpg" alt="Dessert" class="rounded-circle"></a>
+                    <h5 class="text-center">Pan Cake</h5>
+                    </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img13.png" alt="Snacks" class="rounded-circle"></a>
+                    <h5 class="text-center">Snacks</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img10.jpg" alt="Tasty" class="rounded-circle"></a>
+                    <h5 class="text-center">Kokis and Kawum</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"> <img src="vendor/images/img14.jpg" alt="Baked" class="rounded-circle"></a>
+                    <h5 class="text-center">Cookies</h5>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img15.jpg" alt="Cakes" class="rounded-circle"></a>
+                    <h5 class="text-center">Red Velvet Cake</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img16.jpg" alt="Salad" class="rounded-circle"></a>
+                    <h5 class="text-center">Vegetable Salad</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img17.webp" alt="Soup" class="rounded-circle"></a>
+                    <h5 class="text-center">Soup</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img21.jpg" alt="Cakes" class="rounded-circle"></a>
+                    <h5 class="text-center">Bread</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html"><img src="vendor/images/img23.jpg" alt="Cakes" class="rounded-circle"></a>
+                    <h5 class="text-center">Caramel Pudding</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <a href="receipe.html" id="more"><h1 class="text-center">>>>>></h1></a>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <!--service section-->
+    <div class="service mt-5">
+        <div class="container-fluid">
+            <h2 class="text-center">Our Service</h2>
+            <div class="row mt-3">
+                <div class="col-md-4 col-sm-12">
+                    <div class="service_image">
+                        <img src="vendor/images/img2.jpg" alt="Receipe Development" class="img-thumbnail">
+                    </div>
+                    <div class="service_body">
+                        <h3>Receipe Development</h3>
+                        <p>Create delicious and unique recipes tailored to your specific dietary needs.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="service_image">
+                        <img src="vendor/images/img5.jpg" alt="Food Photography" class="img-thumbnail">
+                    </div>
+                    <div class="service_body">
+                        <h3>Food Photography</h3>
+                        <p>Capture mouth-watering images of your culinary creations to entire your audience.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="service_image">
+                        <img src="vendor/images/img6.jpg" alt="Content Writing" class="img-thumbnail">
+                    </div>
+                    <div class="service_body">
+                        <h3>Content Writing</h3>
+                        <p>Craft engaging and informative articles about food and cooking to captivate your readers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--quote section-->
+    <div class="quote mt-5">
+        <div class="container">
+
+            <div class="slides" style="display: block; ">
+                <q>Spice Spot has been my go-to for amazing recipes! <br> Their blog is easy to navigate and the dishes
+                    are
+                    always delicious. Thank <br> you for making cooking at home so much more exciting!</q>
+                <p class="author">-Emma</p>
+            </div>
+            <div class="slides">
+                <q>Spice Spot is a fantastic food recipe blog! The receipes are <br> easy to follow and the flavors are
+                    amazing. I've tried several recipes <br> and they've all turned out great. Thank you for sharing
+                    your
+                    delicious <br> creations with us!</q>
+                <p class="author">-Emily</p>
+            </div>
+            <div class="slides">
+                <q>Spice Spot's food recipe blog is a culinary treasure trove! Their <br> diverse range of recipes and
+                    detailed instructions have made cooking at <br> home a delightful experience. Thank you, Spice Spot,
+                    for
+                    sharing <br> your passion and inspiring me to try new flavors in my kitchen!</q>
+                <p class="author">-Sophia</p>
+            </div>
+
+            <!--Next/prev button-->
+            <button type="button" class="prev" onclick="plusSlides(-1)"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" class="next" onclick="plusSlides(1)"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+
+            <!--indicator-->
+            <div class="dot-container">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!--subscribe section-->
+    <div class="subscribe mt-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 form">
+
+                    <form action="#" class="subscribe_form">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="txt_name" class="form-label fw-bold">Name</label>
+                                <input type="text" id="txt_name" class="form-control" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="txt_mail" class="form-label fw-bold">Email</label>
+                                <input type="email" id="txt_mail" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="txt_msg" class="form-label fw-bold">Message</label>
+                                <textarea class="form-control" id="" cols="10" rows="3" itemid="txt_msg"
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn">Send</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+
+                <div class="col-md-6 col-sm-12 content">
+                    <h2 class="text-center">Connect With Us</h2>
+                    <p>Drop us a message through the contact form below. We are here to answer any questions and provide
+                        assistance for your food recipe blog journey. We can't wait to hear from you!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer section-->
+    <div class="footer">
+        <!--copyright-->
+        <div class="container">
+            <p class="text-center">&copy 2023 <span>Madushi</span> All Rights Reserved</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

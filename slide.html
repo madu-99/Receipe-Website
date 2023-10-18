@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .Slide {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+      width: 100%;
+      height: 400px;
+    }
+
+    .slideContainer {
+      max-width: 600px;
+      margin: 10px;
+      position: relative;
+      margin: auto;
+    }
+
+    .prevBtn,
+    .nextBtn {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 10px;
+      background-color: rgb(255, 255, 75);
+      color: rgb(50, 0, 116);
+      font-weight: bolder;
+      font-size: 18px;
+    }
+
+    .nextBtn {
+      right: -40px;
+    }
+
+    .prevBtn {
+      left: -40px;
+    }
+
+    .Caption {
+      color: #500070;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 25px;
+      padding: 8px 12px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+    }
+
+    .Navdot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgb(54, 5, 117);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      display: inline-block;
+      margin-top: 30px;
+    }
+
+    .selected,
+    .Navdot:hover {
+      background-color: #d9ff00;
+    }
+
+    @media only screen and (max-width: 450px) {
+
+      .prevBtn,
+      .nextBtn,
+      .Caption {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Quote slideShow</h1>
+  <hr />
+  <div class="slideContainer">
+    <div class="Slide">
+      <h1>"The way to get started is to quit talking and begin doing."</h1>
+      <div class="Caption">- Walt Disney</div>
+    </div>
+    <div class="Slide">
+      <h1>
+        "If life were predictable it would cease to be life, and be without flavor."
+      </h1>
+      <div class="Caption">-Eleanor Roosevelt</div>
+    </div>
+    <div class="Slide">
+      <h1>"Life is what happens when you're busy making other plans."</h1>
+      <div class="Caption">-John Lennon</div>
+    </div>
+    <a class="prevBtn" onclick="change()">❮</a>
+    <a class="nextBtn">❯</a>
+  </div>
+  <br />
+  <div style="text-align:center">
+    <span class="Navdot" onclick="currentSlide(1)"></span>
+    <span class="Navdot" onclick="currentSlide(2)"></span>
+    <span class="Navdot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+
+    var slideIndex = 1;
+    showSlide(slideIndex);
+    document.querySelector(".prevBtn").addEventListener("click", () => {
+      changeSlides(-1);
+    });
+    document.querySelector(".nextBtn").addEventListener("click", () => {
+      changeSlides(1);
+    });
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function changeSlides(n) {
+      showSlides((slideIndex += n));
+    }
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    } 
+    function showSlide(n){
+      var i;
+      var slides = document.getElementsByClassName("Slide");
+      var dots = document.getElementsByClassName("Navdot");
+
+      if(n > slides.length){
+        slideIndex = 1;
+      }
+      if(n<1){
+        slideIndex = slides.length;
+      }
+    }
+      Array.from(slides).forEach(item => (item.style.display = "none"));
+      Array.from(dots).forEach(
+        item => (item.className = item.className.replace(" selected", ""))
+      );
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " selected";
+    
+    
+  </script>
+</body>
+
+</html>
