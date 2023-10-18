@@ -17,8 +17,8 @@ This is a recipe website. This challenge help me to improve my coding skills.
 
 ### Links
 
-- URL: [GitHub]()
-- Live Site URL: [Netlify]()
+- URL: [GitHub](https://github.com/madu-99/Receipe-Website)
+- Live Site URL: [Netlify](https://receipe-website.netlify.app/)
 
 
 
