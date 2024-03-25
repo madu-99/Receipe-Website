@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Spot - Pan Cake</title>
+
+    <!--link logo-->
+    <link rel="icon" href="vendor/images/logo.png">
+
+    <!--link bootstrap 5 css file-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!--link fontawesome css file-->
+    <link rel="stylesheet" href="vendor/FontAwesome/css/all.min.css">
+
+    <!--link custom css file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--link bootstrap 5 js file-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--link custom js file-->
+    <script src="app.js"></script>
+
+    <!--link jquery-->
+    <script src="vendor/Jquery/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".loader").fadeOut(1000);
+        })
+    </script>
+</head>
+
+<body>
+    <!--loader-->
+
+    <header>
+        <div class="loader"></div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="vendor/images/logo.png" alt=""></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                    <ul class="navbar nav">
+                        <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="receipe.html" class="nav-link active">Receipe</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <a href="receipe.html" style="text-decoration: none; color: black;"> <i
+                                class="fa fa-search"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--content-->
+    <div class="content_area">
+        <div class="container">
+            <h2>Pan Cake</h2>
+            <p>Pan cakes are very delicious and you can customize them with your favourite add-ins. It is so light and
+                fluffy. You only need a few simple ingredients.</p>
+            <p>The secret to light and fluffy pancakes is baking powder. It reacts with the heat of the pan and helps
+                the pancake rise.</p>
+            <p>The boxed pancake mix is going away with you. Most likely, you already have everything in your kitchen to
+                cook great pancakes. It's simple to make these pancakes!</p>
+
+            <div class="text-center"><img src="vendor/images/img12.jpg" alt="" class="img-fluid"></div>
+
+            <div class="recipe1">
+                <h5>Ingredients</h5>
+                <ul>
+                    <li>25g melt butter</li>
+                    <li>3/4 cup luckwarm milk</li>
+                    <li>150g flour</li>
+                    <li>1 tbsp sugar</li>
+                    <li>1 large egg</li>
+                    <li>Pinch of salt</li>
+                    <li>1/2 tsp vanila extract</li>
+                    <li>1 3/4 or 2 tsp baking powder</li>
+                </ul>
+
+                <br><br>
+
+                <h5>How To Prepare</h5>
+                <ol>
+                    <li> Step 01
+                        <ul>
+                            <li>Whisk flour, sugar, baking powder and the salt in a bowl</li>
+                        </ul>
+                    </li>
+                    
+                    <li> Step 02
+                        <ul>
+                            <li>Whisk milk, egg, melted butter and vanila extract until combined.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 03
+                        <ul>
+                            <li>Heat a pan over medium heat. The pan is ready if when you splatter a little water onto the pan surface, the water dances around the pan and eventually evaporates.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 04
+                        <ul>
+                            <li>Pour mixture and use a fork to stir until you no longer see clumps of flour. it's okay if the batter has small lumps - it's important not to over-mix the batter.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 05
+                        <ul>
+                            <li>Use a 1/4-cup measuring cup to spoon batter onto the skillet. Gently spread the batter into a 4-inch circle.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 06
+                        <ul>
+                            <li>When edges look dry, and bubble start to appear and pop on the top surfaces of the pancake, turn over. This takes about 2 minutes. Once flipped, cook another 1-2 minutes or until lightly browned and cooked in the middle.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 07
+                        <ul>
+                            <li>Serve immediately with warm syrup, butter and berries.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+    </div>
+
+    <!--subscribe section-->
+    <div class="subscribe mt-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 form">
+
+                    <form action="#" class="subscribe_form">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="txt_name" class="form-label fw-bold">Name</label>
+                                <input type="text" id="txt_name" class="form-control" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="txt_mail" class="form-label fw-bold">Email</label>
+                                <input type="email" id="txt_mail" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label for="txt_msg" class="form-label fw-bold">Message</label>
+                                <textarea class="form-control" id="" cols="10" rows="3" itemid="txt_msg"
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn">Send</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 content">
+                    <h2 class="text-center">Connect With Us</h2>
+                    <p>Drop us a message through the contact form below. We are here to answer any questions and provide
+                        assistance for your food recipe blog journey. We can't wait to hear from you!</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer section-->
+    <div class="footer">
+        <!--copyright-->
+        <div class="container">
+            <p class="text-center">&copy 2023 <span>Madushi</span> All Rights Reserved</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

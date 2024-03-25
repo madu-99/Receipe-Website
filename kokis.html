@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Spot - Kokis</title>
+
+    <!--link logo-->
+    <link rel="icon" href="vendor/images/logo.png">
+
+    <!--link bootstrap 5 css file-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!--link fontawesome css file-->
+    <link rel="stylesheet" href="vendor/FontAwesome/css/all.min.css">
+
+    <!--link custom css file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--link bootstrap 5 js file-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--link custom js file-->
+    <script src="app.js"></script>
+
+    <!--link jquery-->
+    <script src="vendor/Jquery/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".loader").fadeOut(1000);
+        })
+    </script>
+</head>
+
+<body>
+    <!--loader-->
+
+    <header>
+        <div class="loader"></div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="vendor/images/logo.png" alt=""></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                    <ul class="navbar nav">
+                        <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="receipe.html" class="nav-link active">Receipe</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <a href="receipe.html" style="text-decoration: none; color: black;"> <i
+                                class="fa fa-search"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--content-->
+    <div class="content_area">
+        <div class="container">
+            <h2>Kokis</h2>
+            <p>Kokis are Sri Lankan traditional celebratory cookies. It served for many cultural event. Especially it makes for Sinhala and Hindu New Year in April.  </p>
+            <p>This is crunchy, savoury snack. it is made with a mould, and you need to have a mould to make kokis.</p>
+
+            <div class="text-center"><img src="vendor/images/img10.jpg" alt="" class="img-fluid"></div>
+
+            <div class="recipe1">
+                <h5>Ingredients</h5>
+                <ul>
+                    <li>250g rice flour</li>
+                    <li>30g all purpose flour</li>
+                    <li>950ml Full fat coconut milk</li>
+                    <li>1/2 tsp Salt</li>
+                    <li>1/2 tsp Tumeric</li>
+                    <li>1 tsp Sugar</li>
+                    <li>60ml Water</li>
+                    <li>Oil</li>
+                </ul>
+
+                <br><br>
+
+                <h5>How To Prepare</h5>
+                <ol>
+                    <li> Step 01
+                        <ul>
+                            <li>Add the rice flour, all purpose flour, tumeric, salt and sugar to a bowl and whisk to comibne.</li>
+                        </ul>
+                    </li>
+                    
+                    <li> Step 02
+                        <ul>
+                            <li>Add the coconut milk and water a little at a time and whisk until thick, smooth batter.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 03
+                        <ul>
+                            <li>Heat the coconut oil in a deep frying pan over a medium heat until you can insert chopstick(wooden) into the oil and bubbles immediately start to form around it.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 04
+                        <ul>
+                            <li>Heat the kokis mould in the oil for 15 seconds, then gently shake the mould to remove excess oil.</li>
+                            <li>Dip the mould into the batter until the batter touches the upper rim of the mould, then immediately dip the mould with batter into the hot oil.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 05
+                        <ul>
+                            <li>Fry with the mould for about 1 minutes to set the shape, then lift and remove the mould and continue frying until golden yellow and crispy about 45 seconds.</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 06
+                        <ul>
+                            <li>Transfer to paper towel-lined plate and repeat with the remaining batter/</li>
+                        </ul>
+                    </li>
+
+                    <li> Step 07
+                        <ul>
+                            <li>Let the kokis cool completely before serving. Leftover kokis will keep an airtight container at room temperature for upto 5 days.</li>
+                        </ul>
+                    </li>
+
+                </ol>
+
+            </div>
+        </div>
+    </div>
+
+    <!--subscribe section-->
+    <div class="subscribe mt-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 form">
+
+                    <form action="#" class="subscribe_form">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="txt_name" class="form-label fw-bold">Name</label>
+                                <input type="text" id="txt_name" class="form-control" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="txt_mail" class="form-label fw-bold">Email</label>
+                                <input type="email" id="txt_mail" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label for="txt_msg" class="form-label fw-bold">Message</label>
+                                <textarea class="form-control" id="" cols="10" rows="3" itemid="txt_msg"
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn">Send</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 content">
+                    <h2 class="text-center">Connect With Us</h2>
+                    <p>Drop us a message through the contact form below. We are here to answer any questions and provide
+                        assistance for your food recipe blog journey. We can't wait to hear from you!</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer section-->
+    <div class="footer">
+        <!--copyright-->
+        <div class="container">
+            <p class="text-center">&copy 2023 <span>Madushi</span> All Rights Reserved</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
